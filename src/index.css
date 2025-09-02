@@ -2,39 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* BuildVision AI Design System - Construction Tech Platform
+All colors MUST be HSL for consistency.
 */
 
 @layer base {
   :root {
+    /* Core Background & Foreground */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 215 25% 15%;
 
+    /* Card System */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 15%;
 
+    /* Popover System */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
+    /* Primary - Steel Blue (Construction Industry) */
+    --primary: 215 80% 25%;
     --primary-foreground: 210 40% 98%;
+    --primary-glow: 215 80% 35%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Concrete Gray */
+    --secondary: 210 10% 94%;
+    --secondary-foreground: 215 25% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted - Light Grays */
+    --muted: 210 10% 96%;
+    --muted-foreground: 215 15% 50%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Safety Orange */
+    --accent: 25 95% 55%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
+    /* Alert - Construction Yellow */
+    --warning: 45 95% 55%;
+    --warning-foreground: 215 25% 15%;
+
+    /* Success - Safety Green */
+    --success: 145 65% 42%;
+    --success-foreground: 0 0% 100%;
+
+    /* Destructive */
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Borders & Inputs */
+    --border: 215 15% 88%;
+    --input: 215 15% 88%;
+    --ring: 215 80% 25%;
+
+    /* Construction-themed Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(215 80% 25%), hsl(215 80% 35%));
+    --gradient-construction: linear-gradient(180deg, hsl(215 80% 25%), hsl(25 95% 55%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 10% 98%));
+
+    /* Construction Industry Shadows */
+    --shadow-steel: 0 10px 30px -10px hsl(215 80% 25% / 0.2);
+    --shadow-construction: 0 4px 20px -4px hsl(215 80% 25% / 0.15);
+    --shadow-glow: 0 0 40px hsl(215 80% 35% / 0.3);
 
     --radius: 0.5rem;
 
@@ -91,6 +119,14 @@ All colors MUST be HSL.
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Dark mode gradients and shadows */
+    --gradient-hero: linear-gradient(135deg, hsl(210 40% 98%), hsl(215 80% 35%));
+    --gradient-construction: linear-gradient(180deg, hsl(210 40% 98%), hsl(25 95% 55%));
+    --gradient-subtle: linear-gradient(180deg, hsl(222.2 84% 4.9%), hsl(217.2 32.6% 17.5%));
+    --shadow-steel: 0 10px 30px -10px hsl(210 40% 98% / 0.1);
+    --shadow-construction: 0 4px 20px -4px hsl(210 40% 98% / 0.08);
+    --shadow-glow: 0 0 40px hsl(215 80% 35% / 0.2);
   }
 }
 
